@@ -1,0 +1,10 @@
+<div>
+    <h2>My Buildings</h2>
+
+    <div class="card-container">
+      <div class="card" *ngFor="let building of buildings">
+        <h3>{{ building.name }}</h3>
+        <p><strong>Complex ID:</strong> {{ building.complex_id }}</p>
+    </div>
+  </div>
+</div>

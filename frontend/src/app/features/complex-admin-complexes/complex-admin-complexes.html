@@ -1,0 +1,22 @@
+<div>
+    <h2>My Complexes</h2>
+
+    <div class="card-container">
+      <div class="card" *ngFor="let complex of complexes">
+        <h3>{{ complex.identity }}</h3>
+        <p><strong>Address:</strong> {{ complex.address }}</p>
+        <p><strong>Campaign Info:</strong> {{ complex.campaign_info }}</p>
+        <div *ngIf="buildingsMap[complex.id].length > 0; else noBuildings">
+          <p><strong>Buildings:</strong></p>
+          <ul>
+            <li *ngFor="let building of buildingsMap[complex.id]">
+            {{ building.name }}
+            </li>
+          </ul>
+        </div>
+        <ng-template #noBuildings>
+          <p>No buildings yet</p>
+        </ng-template>
+      </div>
+    </div>
+</div>

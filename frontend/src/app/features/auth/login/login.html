@@ -1,0 +1,10 @@
+<div class="align-center">
+    <h1>Login</h1>
+    <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+        <input type="email" name="email" [(ngModel)]="email" placeholder="Email" required>
+        <input type="password" name="password" [(ngModel)]="password" placeholder="Password" required>
+        <div class="btn-div">
+            <button type="submit" class="login-btn">Login</button>
+        </div>
+    </form>
+</div>

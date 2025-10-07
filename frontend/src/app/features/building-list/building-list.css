@@ -1,0 +1,47 @@
+.page-header{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.buildings-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.building-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  position: relative;
+}
+
+.building-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.building-card p {
+  margin: 0.25rem 0;
+}
+
+.btn-delete {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #c0392b;
+}
