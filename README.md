@@ -69,6 +69,8 @@ residential-complexes-management/
    py app.py
    ```
 
+Note that you would have to create a super admin through postman first. Also Bearer Token was used. JWT tokens are generated.
+
 ### Frontend
 
 1. Navigate to the frontend folder:
